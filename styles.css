@@ -1,0 +1,609 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e; /* Dark grey background */
+    color: #fff; /* White text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #444; /* Slightly lighter grey for container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.button-group {
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+.stats p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#matches-details li {
+    margin: 10px 0;
+}
+
+#matches-details li:nth-child(odd) {
+    background-color: #555; /* Alternating row color */
+}
+
+#matches-details li:nth-child(even) {
+    background-color: #666; /* Alternating row color */
+}
+
+#prev-page, #next-page {
+    margin: 10px;
+}
+
+/* Hide popup by default */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.popup input {
+    display: block;
+    margin: 10px 0;
+}
+
+.popup button {
+    margin-top: 10px;
+}
+
+/* Existing styles for layout and buttons */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue color for the buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles for form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin: 5px 0;
+}
+
+input, select {
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#submit-report {
+    margin-top: 15px;
+}
+
+/* Specific style for the Home button on the report match page */
+a.button {
+    margin-top: 30px; /* Add margin top to move the Home button down */
+}
+/* General styles for the layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark gray background */
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff1493; /* Dark pink color for the buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #d11279; /* Slightly darker pink on hover */
+}
+
+/* Form styles for Report Match page */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+input, select {
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#submit-report {
+    margin-top: 15px;
+}
+
+a.button {
+    margin-top: 30px; /* Add margin top for spacing */
+}
+
+/* Style for matches display */
+#matches-container {
+    margin-top: 20px;
+}
+
+#matches-details {
+    list-style-type: none;
+    padding: 0;
+}
+
+#matches-details li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #444; /* Slightly lighter background for list items */
+    border-radius: 5px;
+}
+
+#page-info {
+    display: inline-block;
+    margin: 10px;
+}
+/* General styles for the layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark gray background */
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff1493; /* Dark pink color for the buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.button:hover {
+    background-color: #d11279; /* Slightly darker pink on hover */
+    transform: translateY(-2px); /* Raise button on hover */
+}
+
+/* Form styles for Report Match page */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+input, select {
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#submit-report {
+    margin-top: 15px;
+    background-color: #1c70b4; /* Green color for the Submit Match button */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#submit-report:hover {
+    background-color: #1c70b4; /* Darker green on hover */
+    transform: translateY(-2px); /* Raise button on hover */
+}
+
+a.button {
+    margin-top: 30px; /* Add margin top for spacing */
+}
+
+/* Style for matches display */
+#matches-container {
+    margin-top: 20px;
+}
+
+#matches-details {
+    list-style-type: none;
+    padding: 0;
+}
+
+#matches-details li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #444; /* Slightly lighter background for list items */
+    border-radius: 5px;
+}
+
+#page-info {
+    display: inline-block;
+    margin: 10px;
+}
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fefefe; /* White background */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    color: #ff69b4; /* Dark pink text color */
+}
+
+.close {
+    color: #ff69b4; /* Dark pink color */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #d85d8c;
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.button-group {
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    padding: 8px;
+    margin: 5px 0;
+    width: 80%;
+}
+
+.stats {
+    list-style: none;
+    padding: 0;
+}
+
+.stats li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e7f3ff;
+    border: 1px solid #b3d7ff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#matches-container {
+    display: none;
+    margin-top: 20px;
+}
+
+#page-info {
+    margin-top: 10px;
+}
+
+#pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#pagination-controls button {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#pagination-controls button:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.button-group {
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+}
+/* General button styles */
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Container for logged-in buttons */
+.button-group.logged-in {
+    margin-bottom: 20px;
+}
+
+/* Layout for buttons in one line */
+.button-group.logged-in a {
+    display: inline-block;
+}
+
+/* Make sure buttons in the same group are next to each other */
+.button-group.logged-in a {
+    margin-right: 10px;
+}
+
+/* Ensure the logout button is on its own line */
+.button-group.logged-in a:last-child {
+    display: block;
+    margin-right: 0;
+}
+
+
+

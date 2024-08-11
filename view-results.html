@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>View Results</h1>
+        <div class="stats">
+            <p id="total-matches">Total Matches Played: 0</p>
+            <p id="total-wins">Total Wins: 0</p>
+            <p id="total-losses">Total Losses: 0</p>
+            <p id="win-percentage">Win/Loss Percentage: 0.00%</p>
+            <p id="highest-break">Overall Highest Break: 0</p>
+            <p id="average-highest-break">Average Highest Break: 0</p>
+            <p id="win-streak">Current Win Streak: 0</p>
+        </div>
+        <button id="view-matches-btn" class="button">View Matches</button>
+        <div id="matches-container" style="display: none;">
+            <ul id="matches-details"></ul>
+            <button id="prev-page" class="button">Previous</button>
+            <span id="page-info">Page 1</span>
+            <button id="next-page" class="button">Next</button>
+        </div>
+        <a href="index.php" class="button">Home</a>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
